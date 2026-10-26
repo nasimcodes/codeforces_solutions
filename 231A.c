@@ -1,18 +1,14 @@
- 
 #include <stdio.h>
+
 int main() {
-   
-    int n,count=0;
+    int n,p,v,t,count=0;
     scanf("%d",&n);
-    for(int i=1;i<=n;i++){
-        int x,y,z,sum;
-        scanf("%d %d %d",&x,&y,&z);
-        sum=x+y+z;
-        if(sum>=2){
+    for(int i=0;i<n;i++){
+        scanf("%d %d %d",&p,&v,&t);
+        if(p==0 || v==0 || t==0){
             count++;
         }
     }
-    printf("%d\n",count);
- 
+    printf("%d",count);
     return 0;
 }
