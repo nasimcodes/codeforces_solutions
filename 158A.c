@@ -1,19 +1,16 @@
 #include <stdio.h>
- 
+
 int main() {
- 
     int n,k,count=0;
     scanf("%d %d",&n,&k);
-    int part[n];
+    int a[n];
     for(int i=0;i<n;i++){
-    scanf("%d",&part[i]);
+        scanf("%d",&a[i]);
     }
-    int tar=part[k-1];
     for(int i=0;i<n;i++){
-        if(part[i]>=tar && part[i]>0){
-            count++;
-        }
+        if(a[i]>=a[k-1] && a[i]>0){
+        count++;}
     }
-  printf("%d\n",count);
+    printf("%d",count);
     return 0;
 }
